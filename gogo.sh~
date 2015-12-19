@@ -1,0 +1,8 @@
+#!/bin/sh
+
+python finetuning-autoencoder.py
+nvidia-smi
+python encoder.py
+nvidia-smi
+python coded-lstm-trainer.py
+nvidia-smi
